@@ -1,3 +1,15 @@
 nav {
   display: flex;
 }
+#navbar-pinterest {
+  flex: 1;
+  margin: 5px;
+}
+#finder {
+  width: 98%;
+  padding: 5px;
+}
+.left-container,
+.right-container {
+  display: flex;
+}
