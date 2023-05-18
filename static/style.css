@@ -3,17 +3,19 @@
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 600;
+  margin: 0;
 }
 nav {
   display: flex;
 }
 #navbar-pinterest {
   flex: 1;
-  margin: 5px;
+  display: flex;
+  align-items: center;
 }
 #finder {
-  width: 98%;
-  padding: 5px;
+  width: 100%;
+  box-sizing: border-box;
 }
 .left-container,
 .right-container {
@@ -23,10 +25,21 @@ nav {
 .navbar-button {
   padding: 10px;
   border-radius: 100%;
+  width: 30px;
+  display: flex;
+  align-items: center;
+}
+.navbar-button img,
+.navbar-button svg {
+  width: 100%;
 }
 .navbar-button:hover {
   background-color: aliceblue;
 }
 #pinterest-icon {
   fill: #e60023;
+}
+.navbar-redirect {
+  display: flex;
+  align-items: center;
 }
