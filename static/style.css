@@ -8,6 +8,7 @@ body {
 nav {
   display: flex;
   padding: 16px 16px 4px 16px;
+  margin-bottom: 10px;
 }
 #navbar-pinterest {
   flex: 1;
@@ -96,12 +97,15 @@ nav {
 
 main {
   display: grid;
-  grid-template-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
-  grid-template-rows: 100%;
+  grid-template-columns: repeat(6, 1fr);
 }
 .column {
-  padding: 20px;
+  padding: 0px;
 }
-.column:hover {
-  border: 1px solid #e60023;
+
+main img {
+  width: 100%;
+  border-radius: 30px;
+  padding: 0px 8px 16px 8px;
+  box-sizing: border-box;
 }
