@@ -161,6 +161,8 @@ main {
   grid-template-columns: repeat(6, 1fr);
   gap: 20px;
   position: relative;
+  max-width: 95vw;
+  margin: auto;
 }
 .column {
   padding: 0px;
@@ -293,4 +295,30 @@ main img {
   border-radius: 5px;
   font-size: 12px;
   z-index: 1000;
+}
+@media screen and (max-width: 1512px) {
+  main {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+@media screen and (max-width: 1260px) {
+  main {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (max-width: 1007px) {
+  main {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 756px) {
+  main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 520px) {
+  main {
+    min-width: 500px;
+  }
 }
