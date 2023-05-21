@@ -105,8 +105,13 @@ body:has(#finder:focus) main::after {
 .navbar-button:hover {
   background-color: #e9e9e9;
 }
-#pinterest-icon {
+#pinterest-icon a svg {
   fill: #e60023;
+}
+#pinterest-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .right-container svg {
   fill: #5f5f5f;
@@ -150,6 +155,8 @@ body:has(#finder:focus) main::after {
 
 main {
   padding-top: 85px;
+  padding-left: 15px;
+  padding-right: 15px;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 20px;
@@ -168,10 +175,10 @@ main img {
   object-fit: cover;
   display: block;
 }
-.image-container:hover img {
+.card-image:hover img {
   opacity: 0.4;
 }
-.image-container {
+.card-image {
   background: #5f5f5f;
   border-radius: 16px;
   margin-bottom: 15px;
@@ -179,7 +186,7 @@ main img {
   display: flex;
 }
 
-.image-container:hover::before {
+.card-image:hover::before {
   top: 3%;
   right: 10px;
   content: "Guardar";
@@ -214,14 +221,14 @@ main img {
   width: 17px;
   height: auto;
 }
-.image-container:hover .share-and-options {
+.card-image:hover .share-and-options {
   opacity: 1;
 }
 
-#notifications-button {
+#notifications {
   position: relative;
 }
-#notifications-button:hover:after {
+#notifications:hover:after {
   content: "Notificaciones";
   display: block;
   position: absolute;
@@ -235,10 +242,10 @@ main img {
   font-size: 12px;
   z-index: 1000;
 }
-#messages-button {
+#message {
   position: relative;
 }
-#messages-button:hover:after {
+#message:hover:after {
   content: "Mensajes";
   display: block;
   position: absolute;
@@ -252,10 +259,10 @@ main img {
   font-size: 12px;
   z-index: 1000;
 }
-#profile-button {
+#profile-img {
   position: relative;
 }
-#profile-button:hover:after {
+#profile-img:hover:after {
   content: "Perfil";
   display: block;
   position: absolute;
