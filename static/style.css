@@ -111,7 +111,7 @@ main {
 main img {
   width: 100%;
   height: 100%;
-  border-radius: 30px;
+  border-radius: 16px;
   z-index: 900;
   opacity: 1;
   object-fit: cover;
@@ -122,7 +122,7 @@ main img {
 }
 .image-container {
   background: #5f5f5f;
-  border-radius: 30px;
+  border-radius: 16px;
   margin-bottom: 15px;
   position: relative;
   display: flex;
@@ -130,13 +130,13 @@ main img {
 
 .image-container:hover::before {
   top: 3%;
-  left: 60%;
+  right: 10px;
   content: "Guardar";
   position: absolute;
   background-color: #e60023;
   color: white;
   padding: 15px;
-  border-radius: 30px;
+  border-radius: 16px;
   z-index: 1000;
 }
 
@@ -165,4 +165,74 @@ main img {
 }
 .image-container:hover .share-and-options {
   opacity: 1;
+}
+
+#notifications-button {
+  position: relative;
+}
+#notifications-button:hover:after {
+  content: "Notificaciones";
+  display: block;
+  position: absolute;
+  bottom: -32px;
+  left: 50%;
+  transform: translate(-50%);
+  color: white;
+  background: black;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+  z-index: 1000;
+}
+#messages-button {
+  position: relative;
+}
+#messages-button:hover:after {
+  content: "Mensajes";
+  display: block;
+  position: absolute;
+  bottom: -32px;
+  left: 50%;
+  transform: translate(-50%);
+  color: white;
+  background: black;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+  z-index: 1000;
+}
+#profile-button {
+  position: relative;
+}
+#profile-button:hover:after {
+  content: "Perfil";
+  display: block;
+  position: absolute;
+  bottom: -32px;
+  left: 50%;
+  transform: translate(-50%);
+  color: white;
+  background: black;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+  z-index: 1000;
+}
+
+#more-options-icon {
+  position: relative;
+}
+#more-options-icon:hover:after {
+  content: "Cuentas y mas opciones";
+  display: block;
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
+  transform: translate(-50%);
+  color: white;
+  background: black;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+  z-index: 1000;
 }
