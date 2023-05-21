@@ -31,6 +31,9 @@ nav {
 #navbar-pinterest svg {
   margin-right: 8px;
 }
+#navbar-pinterest:hover {
+  background: #d4d4d4;
+}
 #finder {
   width: 100%;
   box-sizing: border-box;
@@ -42,6 +45,7 @@ nav {
   border: none;
   outline: none;
 }
+
 .left-container,
 .right-container {
   display: flex;
