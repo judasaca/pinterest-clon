@@ -11,8 +11,13 @@ body {
 }
 nav {
   display: flex;
-  padding: 16px 16px 4px 16px;
+  padding: 16px 16px 16px 16px;
   margin-bottom: 10px;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 2000;
+  background: white;
 }
 #navbar-pinterest {
   flex: 1;
@@ -100,6 +105,7 @@ nav {
 }
 
 main {
+  padding-top: 85px;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 20px;
